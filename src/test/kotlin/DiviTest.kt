@@ -1,6 +1,5 @@
-import org.junit.Assert
-import org.junit.Test
-
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class DiviTest{
 
@@ -10,15 +9,14 @@ class DiviTest{
     @Test
     fun `devuelve el resultado de dividir el primero num sobre el segungo`(){
         //El resultado que me tiene que dar
-        val resultado = 2
+        val resultado = 2F
 
         //El llamado a la funcion con el paso de argumentos
-        val division: Float = DiviClass.division (6,3)
+        val division: Float = diviClass.division(6F,3F)
 
         //Verifico con la extension que den el mismo resultado
-        Assert.assertEquals(resultado,division)
+        assertEquals(resultado,division)
     }
-
 }
 
 

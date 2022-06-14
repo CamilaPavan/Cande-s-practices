@@ -11,6 +11,7 @@ class SumClassTest {
 
         val suma:Int=sumclass.sum(2,3)
 
+
         assertEquals(resultado,suma)
     }
 }
